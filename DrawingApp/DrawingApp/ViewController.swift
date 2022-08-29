@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let testId = UniqueIdentifier()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        testId.createOneUUID()
     }
-
-
+    
 }
 
