@@ -18,6 +18,7 @@
 		5B8DB98928BC95D3007F98C6 /* DrawingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB98828BC95D3007F98C6 /* DrawingAppUITestsLaunchTests.swift */; };
 		5B8DB99828BC9709007F98C6 /* UniqueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB99728BC9709007F98C6 /* UniqueIdentifier.swift */; };
 		5B8DB99A28BCA8A3007F98C6 /* RectSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB99928BCA8A3007F98C6 /* RectSize.swift */; };
+		5B8DB99C28BCAC5F007F98C6 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB99B28BCAC5F007F98C6 /* Point.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5B8DB98828BC95D3007F98C6 /* DrawingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5B8DB99728BC9709007F98C6 /* UniqueIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueIdentifier.swift; sourceTree = "<group>"; };
 		5B8DB99928BCA8A3007F98C6 /* RectSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectSize.swift; sourceTree = "<group>"; };
+		5B8DB99B28BCAC5F007F98C6 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				5B8DB99728BC9709007F98C6 /* UniqueIdentifier.swift */,
 				5B8DB99928BCA8A3007F98C6 /* RectSize.swift */,
+				5B8DB99B28BCAC5F007F98C6 /* Point.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				5B8DB99828BC9709007F98C6 /* UniqueIdentifier.swift in Sources */,
 				5B8DB99A28BCA8A3007F98C6 /* RectSize.swift in Sources */,
+				5B8DB99C28BCAC5F007F98C6 /* Point.swift in Sources */,
 				5B8DB96A28BC95D2007F98C6 /* ViewController.swift in Sources */,
 				5B8DB96628BC95D2007F98C6 /* AppDelegate.swift in Sources */,
 				5B8DB96828BC95D2007F98C6 /* SceneDelegate.swift in Sources */,
