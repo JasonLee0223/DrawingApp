@@ -80,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				5B8DB96428BC95D2007F98C6 /* DrawingApp */,
+				5B8DB96528BC95D2007F98C6 /* AppDelegate.swift */,
+				5B8DB96728BC95D2007F98C6 /* SceneDelegate.swift */,
 				5B8DB97B28BC95D3007F98C6 /* DrawingAppTests */,
 				5B8DB98528BC95D3007F98C6 /* DrawingAppUITests */,
 				5B8DB96328BC95D2007F98C6 /* Products */,
@@ -99,8 +101,6 @@
 		5B8DB96428BC95D2007F98C6 /* DrawingApp */ = {
 			isa = PBXGroup;
 			children = (
-				5B8DB96528BC95D2007F98C6 /* AppDelegate.swift */,
-				5B8DB96728BC95D2007F98C6 /* SceneDelegate.swift */,
 				5B8DB96928BC95D2007F98C6 /* ViewController.swift */,
 				5B8DB99528BC95E0007F98C6 /* Resource */,
 			);
