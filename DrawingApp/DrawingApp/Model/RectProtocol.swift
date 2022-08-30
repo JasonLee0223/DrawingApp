@@ -15,3 +15,11 @@ protocol CreateRandomRect {
     func generateRandomAlpha() -> Alpha
     func createRandomRect() -> showRect
 }
+
+protocol showRect: CustomStringConvertible {
+    var id: UniqueIdentifier { get }
+    var point: Point { get }
+    var size: RectSize { get }
+    var backgroundColor: BackgroundColor { get }
+    var alpha: Alpha { get }
+}
