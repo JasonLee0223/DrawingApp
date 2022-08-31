@@ -23,6 +23,7 @@
 		5B8DB9A028BCB118007F98C6 /* Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB99F28BCB118007F98C6 /* Alpha.swift */; };
 		5B8DB9A228BE07D2007F98C6 /* RectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */; };
 		5B8DB9A428BE3515007F98C6 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A328BE3515007F98C6 /* Rectangle.swift */; };
+		5B8DB9A628BF1C6D007F98C6 /* RectFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5B8DB99F28BCB118007F98C6 /* Alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alpha.swift; sourceTree = "<group>"; };
 		5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectProtocol.swift; sourceTree = "<group>"; };
 		5B8DB9A328BE3515007F98C6 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				5B8DB99F28BCB118007F98C6 /* Alpha.swift */,
 				5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */,
 				5B8DB9A328BE3515007F98C6 /* Rectangle.swift */,
+				5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8DB9A628BF1C6D007F98C6 /* RectFactory.swift in Sources */,
 				5B8DB99828BC9709007F98C6 /* UniqueIdentifier.swift in Sources */,
 				5B8DB99A28BCA8A3007F98C6 /* RectSize.swift in Sources */,
 				5B8DB99C28BCAC5F007F98C6 /* Point.swift in Sources */,
