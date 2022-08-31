@@ -30,6 +30,6 @@ class UniqueIdentifier {
 
 extension UniqueIdentifier: CustomStringConvertible {
     var description: String {
-        return "RectID \(self.uniqueID)"
+        return "RectID (\(self.uniqueID))"
     }
 }

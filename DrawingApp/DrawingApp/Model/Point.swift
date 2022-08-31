@@ -18,14 +18,14 @@ class Point {
     }
     
     static func randomPoint() -> Point{
-        let randomX = Double.random(in: 0.0...900.0)
-        let randomY = Double.random(in: 0.0...650.0)
+        let randomX = floor(Double.random(in: 0.0...900.0))
+        let randomY = floor(Double.random(in: 0.0...650.0))
         return Point(x: randomX, y: randomY)
     }
 }
 
 extension Point:CustomStringConvertible {
     var description: String {
-        return "Point: X=\(self.x), Y=\(self.y)"
+        return "X:\(self.x), Y:\(self.y)"
     }
 }

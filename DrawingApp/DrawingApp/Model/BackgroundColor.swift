@@ -29,6 +29,6 @@ class BackgroundColor {
 
 extension BackgroundColor: CustomStringConvertible {
     var description: String {
-        return "BackgroundColor: R = \(self.red), G = \(self.green), B = \(self.blue)"
+        return "R:\(self.red), G:\(self.green), B:\(self.blue)"
     }
 }

@@ -18,14 +18,14 @@ class RectSize {
     }
     
     static func randomSize() -> RectSize {
-        let randomWidth = Double.random(in: 50.0...200.0)
-        let randomHeight = Double.random(in: 50.0...200.0)
+        let randomWidth = floor(Double.random(in: 50.0...200.0))
+        let randomHeight = floor(Double.random(in: 50.0...200.0))
         return RectSize(width: randomWidth, height: randomHeight)
     }
 }
 
 extension RectSize:CustomStringConvertible {
     var description: String {
-        return "RectSize: W = \(self.width), H = \(self.height)"
+        return "W\(self.width), H\(self.height)"
     }
 }
