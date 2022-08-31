@@ -25,6 +25,6 @@ class Rectangle: showRect {
 
 extension showRect {
     var description: String {
-        return "(\(self.id), \(self.point), \(self.size), \(self.backgroundColor), \(self.alpha))"
+        return "\(self.id), \(self.point), \(self.size), \(self.backgroundColor), \(self.alpha)"
     }
 }
