@@ -43,6 +43,6 @@
 <img src = "https://user-images.githubusercontent.com/92699723/187606706-baef805d-166b-44a6-912e-e06852b9c2a1.png" width="800" height="150">   
 
 ### **💬 부연 설명**
-[애플 UIKit 설명 & App and Environment](../TIL/iOS/About%20App%20Development%20with%20UIKit.md)   
-[Protocol 역할과 표현 방식](../TIL/Swift/Protocol.md)   
-[시스템 로그 함수](../TIL/iOS/Logger%20&%20OS_Log.md)   
+[애플 UIKit 설명 & App and Environment](https://github.com/JasonLee0223/TIL/blob/main/iOS/About%20App%20Development%20with%20UIKit.md)   
+[Protocol 역할과 표현 방식](https://github.com/JasonLee0223/TIL/blob/main/iOS/Logger%20&%20OS_Log.md)   
+[시스템 로그 함수](https://github.com/JasonLee0223/TIL/blob/main/Swift/Protocol.md)   
