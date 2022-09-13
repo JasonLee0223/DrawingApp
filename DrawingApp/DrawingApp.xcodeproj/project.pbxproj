@@ -24,6 +24,7 @@
 		5B8DB9A228BE07D2007F98C6 /* RectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */; };
 		5B8DB9A428BE3515007F98C6 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A328BE3515007F98C6 /* Rectangle.swift */; };
 		5B8DB9A628BF1C6D007F98C6 /* RectFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */; };
+		5B8DB9A828D0559F007F98C6 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A728D0559F007F98C6 /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectProtocol.swift; sourceTree = "<group>"; };
 		5B8DB9A328BE3515007F98C6 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectFactory.swift; sourceTree = "<group>"; };
+		5B8DB9A728D0559F007F98C6 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */,
 				5B8DB9A328BE3515007F98C6 /* Rectangle.swift */,
 				5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */,
+				5B8DB9A728D0559F007F98C6 /* Plane.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				5B8DB9A228BE07D2007F98C6 /* RectProtocol.swift in Sources */,
 				5B8DB96628BC95D2007F98C6 /* AppDelegate.swift in Sources */,
 				5B8DB96828BC95D2007F98C6 /* SceneDelegate.swift in Sources */,
+				5B8DB9A828D0559F007F98C6 /* Plane.swift in Sources */,
 				5B8DB99E28BCAF51007F98C6 /* BackgroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
