@@ -1,0 +1,77 @@
+//
+//  DrawingView.swift
+//  DrawingApp
+//
+//  Created by Jason on 2022/09/13.
+//
+
+import UIKit
+
+class DrawingView: UIView {
+    
+    override init(frame: CGRect) {
+        super.init(frame: CGRect(x: 1166, y: 0, width: 200, height: 1024))
+        self.backgroundColor = UIColor.systemGray6
+        layout()
+    }
+    
+    required init(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    let colorLabel: UILabel = {
+        let backgroundColor = UILabel()
+        backgroundColor.text = "배경색"
+        backgroundColor.font = .systemFont(ofSize: 18)
+        backgroundColor.translatesAutoresizingMaskIntoConstraints = false
+        return backgroundColor
+    }()
+    
+    let colorDescription: UIButton = {
+        let config = UIButton.Configuration.plain()
+        let descriptionArea = UIButton(configuration: config)
+        descriptionArea.layer.cornerRadius = 10
+        descriptionArea.layer.borderWidth = 1
+        descriptionArea.layer.borderColor = UIColor.lightGray.cgColor
+        descriptionArea.setTitle(" #D6DFE9 ", for: .normal)
+        descriptionArea.setTitleColor(UIColor.black, for: .normal)
+        descriptionArea.translatesAutoresizingMaskIntoConstraints = false
+        return descriptionArea
+    }()
+    
+    let alphaLabel: UILabel = {
+        let alphaLabel = UILabel()
+        alphaLabel.text = "투명도"
+        alphaLabel.font = .systemFont(ofSize: 20)
+        alphaLabel.translatesAutoresizingMaskIntoConstraints = false
+        return alphaLabel
+    }()
+    
+    let slider: UISlider = {
+        let slider = UISlider()
+        slider.value = 1
+        slider.minimumValue = 1
+        slider.maximumValue = 10
+        // addTarget을 설정해줘야한다.
+        slider.translatesAutoresizingMaskIntoConstraints = false
+        return slider
+    }()
+    
+}
+
+extension DrawingView {
+    func layout() {
+        self.addSubview(colorLabel)
+        colorLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 45).isActive = true
+        colorLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30).isActive = true
+        
+        self.addSubview(colorDescription)
+        colorDescription.topAnchor.constraint(equalTo: colorLabel.bottomAnchor, constant: 10).isActive = true
+        colorDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 45).isActive = true
+        
+//        self.addSubview(alphaLabel)
+        
+//        self.addSubview(slider)
+        
+    }
+}
