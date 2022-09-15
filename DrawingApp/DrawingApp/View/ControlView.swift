@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DrawingView: UIView {
+class ControlView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: CGRect(x: 1166, y: 0, width: 200, height: 1024))
@@ -68,7 +68,7 @@ class DrawingView: UIView {
     
 }
 
-extension DrawingView {
+extension ControlView {
     func layout() {
         self.addSubview(colorLabel)
         colorLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 45).isActive = true
