@@ -42,16 +42,25 @@ class DrawingView: UIView {
     let alphaLabel: UILabel = {
         let alphaLabel = UILabel()
         alphaLabel.text = "투명도"
-        alphaLabel.font = .systemFont(ofSize: 20)
+        alphaLabel.font = .systemFont(ofSize: 18)
         alphaLabel.translatesAutoresizingMaskIntoConstraints = false
         return alphaLabel
     }()
     
     let slider: UISlider = {
+        // Create a Slider
         let slider = UISlider()
-        slider.value = 1
+//        slider.backgroundColor = UIColor.yellow
+        
+        // Set the values
         slider.minimumValue = 1
         slider.maximumValue = 10
+        
+        // Set the position of Slider
+        slider.value = 1
+        slider.thumbTintColor = UIColor.black
+        slider.maximumTrackTintColor = UIColor.lightGray
+        slider.minimumTrackTintColor = UIColor.systemGray3
         // addTarget을 설정해줘야한다.
         slider.translatesAutoresizingMaskIntoConstraints = false
         return slider
@@ -69,9 +78,13 @@ extension DrawingView {
         colorDescription.topAnchor.constraint(equalTo: colorLabel.bottomAnchor, constant: 10).isActive = true
         colorDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 45).isActive = true
         
-//        self.addSubview(alphaLabel)
+        self.addSubview(alphaLabel)
+        alphaLabel.topAnchor.constraint(equalTo: colorDescription.bottomAnchor, constant: 30).isActive = true
+        alphaLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30).isActive = true
         
-//        self.addSubview(slider)
-        
+        self.addSubview(slider)
+        slider.topAnchor.constraint(equalTo: alphaLabel.bottomAnchor, constant: 10).isActive = true
+        slider.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30).isActive = true
+        slider.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30).isActive = true
     }
 }
