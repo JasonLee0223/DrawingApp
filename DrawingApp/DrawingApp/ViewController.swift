@@ -10,17 +10,16 @@ import OSLog
 
 class ViewController: UIViewController {
     
-    let testId = UniqueIdentifier()
+    let drawingView = DrawingView()
+    let controlView = ControlView()
+    let screenWidth = UIScreen.main.bounds.size.width
+    let screenHeight = UIScreen.main.bounds.size.height
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addSubview(drawingView)
+        self.view.addSubview(controlView)
         
-        let randomRectFactory = RectFactory()
-        
-        (0..<4).forEach{ _ in
-            let rectangle = randomRectFactory.createRandomRect()
-            os_log(.debug, log: .default, "\n\(rectangle.description)")
-        }
     }
     
 }
