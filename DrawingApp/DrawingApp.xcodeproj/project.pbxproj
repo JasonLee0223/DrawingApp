@@ -29,6 +29,7 @@
 		5B8DB9AB28D05DFA007F98C6 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9AA28D05DFA007F98C6 /* ControlView.swift */; };
 		5B8DB9AD28D2F48F007F98C6 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9AC28D2F48F007F98C6 /* DrawingView.swift */; };
 		5BF1D70428ED707D0042849A /* RectangleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1D70328ED707D0042849A /* RectangleViewProtocol.swift */; };
+		5BF1D70828ED773D0042849A /* RectagleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1D70728ED773D0042849A /* RectagleFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		5B8DB9AA28D05DFA007F98C6 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		5B8DB9AC28D2F48F007F98C6 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		5BF1D70328ED707D0042849A /* RectangleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewProtocol.swift; sourceTree = "<group>"; };
+		5BF1D70728ED773D0042849A /* RectagleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectagleFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		5BF1D70628ED74BC0042849A /* Concrete Creator */ = {
 			isa = PBXGroup;
 			children = (
+				5BF1D70728ED773D0042849A /* RectagleFactory.swift */,
 			);
 			path = "Concrete Creator";
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				5B8DB99A28BCA8A3007F98C6 /* RectSize.swift in Sources */,
 				5B8DB99C28BCAC5F007F98C6 /* Point.swift in Sources */,
 				5B8DB96A28BC95D2007F98C6 /* ViewController.swift in Sources */,
+				5BF1D70828ED773D0042849A /* RectagleFactory.swift in Sources */,
 				5B8DB9AB28D05DFA007F98C6 /* ControlView.swift in Sources */,
 				5B8DB9A028BCB118007F98C6 /* Alpha.swift in Sources */,
 				5B64EB5828E41380004A7C49 /* ViewFactory.swift in Sources */,
