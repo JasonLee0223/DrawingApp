@@ -15,7 +15,6 @@ protocol CreateRandomRect {
     func generateRandomColor() -> BackgroundColor
     func generateRandomAlpha() -> Alpha
     func createRandomRect() -> showRect
-    func createRectangle(id:UniqueIdentifier, point:Point, size: RectSize, color: BackgroundColor, alpha: Alpha) -> Rectangle
 }
 
 // OS_Log part

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Concrete Product
 class RectFactory: CreateRandomRect {
     func generateRandomIdentifier() -> UniqueIdentifier {
         return UniqueIdentifier()
@@ -34,9 +35,5 @@ class RectFactory: CreateRandomRect {
                          size: generateRandomSize(),
                          backgroundColor: generateRandomColor(),
                          alpha: generateRandomAlpha())
-    }
-    
-    func createRectangle(id: UniqueIdentifier, point: Point, size: RectSize, color: BackgroundColor, alpha: Alpha) -> Rectangle {
-        return Rectangle(id: id, point: point, size: size, backgroundColor: color, alpha: alpha)
     }
 }
