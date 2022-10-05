@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import OSLog
 
-struct Plane: RectangleViewProtocol {
+struct Plane {
     
     private(set) var rectangles = [Rectangle]()
     
-    func createRandomRectangle() -> CreateRandomRect {
-        return generateRectangle()
+    func order(factory: RectangleViewProtocol) {
+        let newRectangle = factory.createRandomRectangle()
+        let testRect = newRectangle.createRandomRect()
+        os_log(.debug, log: .default, "\n\(testRect.description)")
     }
     
     // 사각형을 갖게 되는 메서드
