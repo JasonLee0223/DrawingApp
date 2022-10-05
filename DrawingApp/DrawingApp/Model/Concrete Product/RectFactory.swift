@@ -7,13 +7,7 @@
 
 import Foundation
 
-class RectFactory {
-    func createRectangle(id: UniqueIdentifier, point: Point, size: RectSize, color: BackgroundColor, alpha: Alpha) -> Rectangle {
-        return Rectangle(id: id, point: point, size: size, backgroundColor: color, alpha: alpha)
-    }
-}
-
-extension RectFactory: CreateRandomRect {
+class RectFactory: CreateRandomRect {
     func generateRandomIdentifier() -> UniqueIdentifier {
         return UniqueIdentifier()
     }
@@ -40,5 +34,9 @@ extension RectFactory: CreateRandomRect {
                          size: generateRandomSize(),
                          backgroundColor: generateRandomColor(),
                          alpha: generateRandomAlpha())
+    }
+    
+    func createRectangle(id: UniqueIdentifier, point: Point, size: RectSize, color: BackgroundColor, alpha: Alpha) -> Rectangle {
+        return Rectangle(id: id, point: point, size: size, backgroundColor: color, alpha: alpha)
     }
 }
