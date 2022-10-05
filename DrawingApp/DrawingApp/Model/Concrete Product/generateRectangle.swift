@@ -8,7 +8,7 @@
 import Foundation
 
 // Concrete Product
-class RectFactory: CreateRandomRect {
+class generateRectangle: CreateRandomRect {
     func generateRandomIdentifier() -> UniqueIdentifier {
         return UniqueIdentifier()
     }
