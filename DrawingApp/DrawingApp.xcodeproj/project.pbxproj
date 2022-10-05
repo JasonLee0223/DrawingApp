@@ -170,8 +170,8 @@
 				5BF1D70128ED6F410042849A /* Product */,
 				5BF1D70228ED6F960042849A /* Concrete Product */,
 				5BF1D70528ED72250042849A /* Creator */,
+				5BF1D70628ED74BC0042849A /* Concrete Creator */,
 				5B64EB5728E41380004A7C49 /* ViewFactory.swift */,
-				5B8DB9A728D0559F007F98C6 /* Plane.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +220,14 @@
 				5BF1D70328ED707D0042849A /* RectangleViewProtocol.swift */,
 			);
 			path = Creator;
+			sourceTree = "<group>";
+		};
+		5BF1D70628ED74BC0042849A /* Concrete Creator */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DB9A728D0559F007F98C6 /* Plane.swift */,
+			);
+			path = "Concrete Creator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
