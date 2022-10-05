@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B64EB5828E41380004A7C49 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64EB5728E41380004A7C49 /* ViewFactory.swift */; };
 		5B8DB96628BC95D2007F98C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB96528BC95D2007F98C6 /* AppDelegate.swift */; };
 		5B8DB96828BC95D2007F98C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB96728BC95D2007F98C6 /* SceneDelegate.swift */; };
 		5B8DB96A28BC95D2007F98C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB96928BC95D2007F98C6 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		5B8DB9A828D0559F007F98C6 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9A728D0559F007F98C6 /* Plane.swift */; };
 		5B8DB9AB28D05DFA007F98C6 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9AA28D05DFA007F98C6 /* ControlView.swift */; };
 		5B8DB9AD28D2F48F007F98C6 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB9AC28D2F48F007F98C6 /* DrawingView.swift */; };
+		5BF1D70428ED707D0042849A /* RectangleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1D70328ED707D0042849A /* RectangleViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B64EB5728E41380004A7C49 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		5B8DB96228BC95D2007F98C6 /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8DB96528BC95D2007F98C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B8DB96728BC95D2007F98C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		5B8DB9A728D0559F007F98C6 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		5B8DB9AA28D05DFA007F98C6 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		5B8DB9AC28D2F48F007F98C6 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		5BF1D70328ED707D0042849A /* RectangleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,14 +166,11 @@
 		5B8DB99628BC96E6007F98C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5B8DB99728BC9709007F98C6 /* UniqueIdentifier.swift */,
-				5B8DB99928BCA8A3007F98C6 /* RectSize.swift */,
-				5B8DB99B28BCAC5F007F98C6 /* Point.swift */,
-				5B8DB99D28BCAF51007F98C6 /* BackgroundColor.swift */,
-				5B8DB99F28BCB118007F98C6 /* Alpha.swift */,
-				5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */,
-				5B8DB9A328BE3515007F98C6 /* Rectangle.swift */,
-				5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */,
+				5BF1D70028ED6EDA0042849A /* SubClass */,
+				5BF1D70128ED6F410042849A /* Product */,
+				5BF1D70228ED6F960042849A /* Concrete Product */,
+				5BF1D70528ED72250042849A /* Creator */,
+				5B64EB5728E41380004A7C49 /* ViewFactory.swift */,
 				5B8DB9A728D0559F007F98C6 /* Plane.swift */,
 			);
 			path = Model;
@@ -182,6 +183,43 @@
 				5B8DB9AC28D2F48F007F98C6 /* DrawingView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5BF1D70028ED6EDA0042849A /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DB99728BC9709007F98C6 /* UniqueIdentifier.swift */,
+				5B8DB99928BCA8A3007F98C6 /* RectSize.swift */,
+				5B8DB99B28BCAC5F007F98C6 /* Point.swift */,
+				5B8DB99D28BCAF51007F98C6 /* BackgroundColor.swift */,
+				5B8DB99F28BCB118007F98C6 /* Alpha.swift */,
+				5B8DB9A328BE3515007F98C6 /* Rectangle.swift */,
+			);
+			path = SubClass;
+			sourceTree = "<group>";
+		};
+		5BF1D70128ED6F410042849A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DB9A128BE07D2007F98C6 /* RectProtocol.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		5BF1D70228ED6F960042849A /* Concrete Product */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DB9A528BF1C6D007F98C6 /* RectFactory.swift */,
+			);
+			path = "Concrete Product";
+			sourceTree = "<group>";
+		};
+		5BF1D70528ED72250042849A /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1D70328ED707D0042849A /* RectangleViewProtocol.swift */,
+			);
+			path = Creator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +360,8 @@
 				5B8DB96A28BC95D2007F98C6 /* ViewController.swift in Sources */,
 				5B8DB9AB28D05DFA007F98C6 /* ControlView.swift in Sources */,
 				5B8DB9A028BCB118007F98C6 /* Alpha.swift in Sources */,
+				5B64EB5828E41380004A7C49 /* ViewFactory.swift in Sources */,
+				5BF1D70428ED707D0042849A /* RectangleViewProtocol.swift in Sources */,
 				5B8DB9AD28D2F48F007F98C6 /* DrawingView.swift in Sources */,
 				5B8DB9A428BE3515007F98C6 /* Rectangle.swift in Sources */,
 				5B8DB9A228BE07D2007F98C6 /* RectProtocol.swift in Sources */,
