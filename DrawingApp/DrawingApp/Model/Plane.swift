@@ -12,7 +12,7 @@ struct Plane: RectangleViewProtocol {
     private(set) var rectangles = [Rectangle]()
     
     func createRandomRectangle() -> CreateRandomRect {
-        <#code#>
+        return generateRectangle()
     }
     
     // 사각형을 갖게 되는 메서드
