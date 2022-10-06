@@ -9,9 +9,13 @@ import Foundation
 
 class BackgroundColor {
     
-    private var red: Int = 0
-    private var green: Int = 0
-    private var blue: Int = 0
+    private(set) var red: Int = 0
+    private(set) var green: Int = 0
+    private(set) var blue: Int = 0
+    
+//    var hexColor: String {
+//        "#\(String(r, radix: 16))\(String(g, radix: 16))\(String(b, radix: 16))"
+//    }
     
     init(red:Int, green:Int, blue:Int) {
         self.red = red
