@@ -8,7 +8,8 @@
 import Foundation
 
 // Concrete Product
-class generateRectangle: CreateRandomRect {
+class generateRectangle: ProductAboutRectangle {
+    
     func generateRandomIdentifier() -> UniqueIdentifier {
         return UniqueIdentifier()
     }
@@ -29,11 +30,11 @@ class generateRectangle: CreateRandomRect {
         return Alpha.random
     }
     
-    func createRandomRect() -> showRect {
-        return Rectangle(id: generateRandomIdentifier(),
-                         point: generateRandomPoint(),
-                         size: generateRandomSize(),
-                         backgroundColor: generateRandomColor(),
-                         alpha: generateRandomAlpha())
+    func createRandomRectangle() -> Rectangle {
+         return Rectangle(id: generateRandomIdentifier(),
+                          point: generateRandomPoint(),
+                          size: generateRandomSize(),
+                          backgroundColor: generateRandomColor(),
+                          alpha: generateRandomAlpha())
     }
 }
