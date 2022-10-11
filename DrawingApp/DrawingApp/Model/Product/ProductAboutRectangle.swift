@@ -8,17 +8,17 @@
 import Foundation
 
 // Product part
-protocol CreateRandomRect {
+protocol ProductAboutRectangle {
     func generateRandomIdentifier() -> UniqueIdentifier
     func generateRandomSize() -> RectSize
     func generateRandomPoint() -> Point
     func generateRandomColor() -> BackgroundColor
     func generateRandomAlpha() -> Alpha
-    func createRandomRect() -> showRect
+    func createRandomRectangle() -> Rectangle
 }
 
 // OS_Log part
-protocol showRect: CustomStringConvertible {
+protocol ShowRect: CustomStringConvertible {
     var id: UniqueIdentifier { get }
     var point: Point { get }
     var size: RectSize { get }
