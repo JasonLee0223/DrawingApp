@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Rectangle: showRect {
+class Rectangle: ShowRect {
     private(set) var id: UniqueIdentifier
     private(set) var point: Point
     private(set) var size: RectSize
@@ -23,7 +23,7 @@ class Rectangle: showRect {
     }
 }
 
-extension showRect {
+extension ShowRect {
     var description: String {
         return "\(self.id), \(self.point), \(self.size), \(self.backgroundColor), \(self.alpha)"
     }
