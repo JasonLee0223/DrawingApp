@@ -7,15 +7,20 @@
 
 import UIKit
 
+protocol ControlViewDelegate: AnyObject {
+    
+}
+
 class ControlView: UIView {
     
-    override init(frame: CGRect) {
-        super.init(frame: CGRect(x: 1166, y: 0, width: 200, height: 1024))
-        self.backgroundColor = UIColor.systemGray6
+    init(frame: CGRect, backgroundColor: UIColor) {
+        super.init(frame: frame)
+        self.backgroundColor = backgroundColor
         layout()
     }
     
-    required init(coder: NSCoder) {
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
         fatalError("init(coder:) has not been implemented")
     }
     
