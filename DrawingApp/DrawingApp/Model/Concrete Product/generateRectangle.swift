@@ -30,7 +30,7 @@ class generateRectangle: ProductAboutRectangle {
         return Alpha.random
     }
     
-    func createRandomRectangle() -> Rectangle {
+    func generateRandomRectangle() -> Rectangle {
          return Rectangle(id: generateRandomIdentifier(),
                           point: generateRandomPoint(),
                           size: generateRandomSize(),

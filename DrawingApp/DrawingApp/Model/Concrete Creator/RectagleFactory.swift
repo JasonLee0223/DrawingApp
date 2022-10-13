@@ -9,7 +9,7 @@ import Foundation
 
 // Concrete Creator
 class RectangleFactory: RectangleViewProtocol {
-    func createRandomRectangleView() -> ProductAboutRectangle {
+    func createRandomRectangle() -> ProductAboutRectangle {
         return generateRectangle()
     }
     

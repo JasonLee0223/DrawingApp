@@ -14,7 +14,7 @@ protocol ProductAboutRectangle {
     func generateRandomPoint() -> Point
     func generateRandomColor() -> BackgroundColor
     func generateRandomAlpha() -> Alpha
-    func createRandomRectangle() -> Rectangle
+    func generateRandomRectangle() -> Rectangle
 }
 
 // OS_Log part

@@ -9,5 +9,5 @@ import Foundation
 
 // Creator
 protocol RectangleViewProtocol {
-    func createRandomRectangle() -> CreateRandomRect
+    func createRandomRectangle() -> ProductAboutRectangle
 }
