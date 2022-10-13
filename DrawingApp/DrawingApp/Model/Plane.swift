@@ -6,32 +6,39 @@
 //
 
 import Foundation
-import OSLog
 
+protocol PlaneDelegate:AnyObject {
+    func addingRectangleComplted(product: Rectangle)
+}
+
+// Plane은 생성한 사각형의 객체를 포함(저장)하여 View에서 변경되는 내용을 업데이트하고 반영한다.
 struct Plane {
     
-    private(set) var rectangles = [Rectangle]()
+    private var rectangles = [Rectangle]()
     
-    func order(factory: RectangleViewProtocol) {
-        let newRectangle = factory.createRandomRectangle()
-        let testRect = newRectangle.createRandomRect()
-        os_log(.debug, log: .default, "\n\(testRect.description)")
+    private var count: Int = 0
+    private(set) var rectangleCount: Int {
+        get {
+            return count
+        }
+        set(count) {
+            self.count = count
+        }
     }
+    
+    weak var delegate: PlaneDelegate?
     
     // 사각형을 갖게 되는 메서드
-    mutating func thePlaneOwns(rectangleView: Rectangle) {
-        
-    }
-    
-    // 사각형의 전체 개수를 알려주는 메서드 or 연산 프로퍼티
-    func countOfRectangle() -> Int {
-        
-        return rectangles.count
+    mutating func add(theCreated rectangle: Rectangle) {
+        rectangles.append(rectangle)
+        count += 1
+        if let delegate = self.delegate {
+            delegate.addingRectangleComplted(product: rectangle)
+        }
     }
     
     // Subscript를 이용하여 index를 넘겨 해당 사각형 모델을 return
-    func rectangle(index: Int) -> Rectangle {
-        
+    subscript(_ index: Int) -> Rectangle {
         return rectangles[index]
     }
     
