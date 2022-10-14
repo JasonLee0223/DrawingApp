@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import OSLog
 
 class DrawingView: UIView {
     

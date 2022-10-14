@@ -22,9 +22,6 @@ class ViewController: UIViewController {
         initializePlaneDelegate()
         initializeAllSubViews()
         
-//        let rectangle = testFactory.addTo(rectFactory: RectangleFactory())
-//        let cnt = testFactory.countOfRectangle()
-//        print("\(cnt)")
     }
     
     //MARK: - [Confirm] Configure about UIView (SubViews)
