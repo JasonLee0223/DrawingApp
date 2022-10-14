@@ -66,6 +66,7 @@ class ControlView: UIView {
         slider.thumbTintColor = UIColor.black
         slider.maximumTrackTintColor = UIColor.lightGray
         slider.minimumTrackTintColor = UIColor.systemGray3
+        
         // addTarget을 설정해줘야한다.
         slider.translatesAutoresizingMaskIntoConstraints = false
         return slider

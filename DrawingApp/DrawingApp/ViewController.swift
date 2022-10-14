@@ -10,10 +10,8 @@ import OSLog
 
 class ViewController: UIViewController {
     
-    var drawingView: DrawingView?
-    var controlView: ControlView?
-    let screenWidth = UIScreen.main.bounds.size.width
-    let screenHeight = UIScreen.main.bounds.size.height
+    private var drawingView: DrawingView?
+    private var controlView: ControlView?
     
     private var plane: Plane = Plane()
     
@@ -21,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         initializePlaneDelegate()
         initializeAllSubViews()
-        
+        setGestureRecognizer()
     }
     
     //MARK: - [Confirm] Configure about UIView (SubViews)
@@ -53,12 +51,20 @@ class ViewController: UIViewController {
         self.view.addSubview(controlView)
     }
     
+    private func setGestureRecognizer() {
+        guard drawingView != nil else { return }
+        let tapGestureRecognizer = UITapGestureRecognizer()
+        tapGestureRecognizer.delegate = self
+        drawingView?.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
     //MARK: - [Confirm] Configure about PlaneDelegate
     private func initializePlaneDelegate() {
         self.plane.delegate = self
     }
     
     //MARK: - [Excepted] Configure about TapGesture
+
 }
 
 //MARK: - DrawingViewDelegate
@@ -68,6 +74,7 @@ extension ViewController: DrawingViewDelegate {
         guard self.drawingView != nil else { return }
         let rectangleFactory = RectangleFactory().createRandomRectangle()
         let rectangle = rectangleFactory.generateRandomRectangle()
+        let string = rectangle.id.uniqueID
         plane.add(theCreated: rectangle)
     }
 }
@@ -79,11 +86,27 @@ extension ViewController: ControlViewDelegate {
 
 //MARK: - PlaneDelegate
 extension ViewController: PlaneDelegate {
-    
     func addingRectangleComplted(product: Rectangle) {
         guard self.drawingView != nil else { return }
         os_log("\(product)")
         let newRectangleView = ViewFactory.generateRectangleView(of: product)
         self.view.addSubview(newRectangleView)
+    }
+    
+    func rectangleFoundFromPlane(product: Rectangle) {
+        <#code#>
+    }
+    
+    func rectangleNotFoundFromPlane() {
+        <#code#>
+    }
+}
+
+//MARK: - GestureRecognizerDelegate
+extension ViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        let touchPoint = touch.location(in: self.drawingView)
+        self.plane.findMatchingRectanglePoint(x: touchPoint.x, y: touchPoint.y)
+        return true
     }
 }

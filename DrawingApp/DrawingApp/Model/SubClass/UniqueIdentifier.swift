@@ -10,7 +10,7 @@ import Foundation
 //MARK: - uniqueID Format: xxx-xxx-xxx
 class UniqueIdentifier {
     
-    private var uniqueID: String
+    private(set) var uniqueID: String
     
     init() {
         self.uniqueID = {

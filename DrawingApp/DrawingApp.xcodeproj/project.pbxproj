@@ -133,9 +133,9 @@
 		5B8DB96428BC95D2007F98C6 /* DrawingApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B8DB96928BC95D2007F98C6 /* ViewController.swift */,
 				5B8DB9A928D05DE1007F98C6 /* View */,
 				5B8DB99628BC96E6007F98C6 /* Model */,
-				5B8DB96928BC95D2007F98C6 /* ViewController.swift */,
 				5B8DB99528BC95E0007F98C6 /* Resource */,
 			);
 			path = DrawingApp;
@@ -178,8 +178,8 @@
 				5BF1D70528ED72250042849A /* Creator */,
 				5BF1D70628ED74BC0042849A /* Concrete Creator */,
 				5B8DB9A728D0559F007F98C6 /* Plane.swift */,
-				5B64EB5728E41380004A7C49 /* ViewFactory.swift */,
 				5B2F5A1628F9340E00528E03 /* PlaneDelegate.swift */,
+				5B64EB5728E41380004A7C49 /* ViewFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
