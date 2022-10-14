@@ -20,6 +20,13 @@
 - property change(속성 변경)
 
 ### **🤔 고민과 해결**   
+1. Rectangle 객체를 생성하는부분을 모르게 감추려고했고 이 부분에서 Factory Method를 사용해보았다.   
+2. [고민] MVC패턴에 맞춰 Model에서 View로 데이터를 넘겨주는데 어려웠던 부분이 있었다.   
+하여 Delegate 패턴을 사용하게되었고 처음에는 PlaneDelegate를 통해서 데이터가 오가면 된다고 생각하였는데   
+Model -> View로 바로 갈 수 없고 Controller를 통해서 데이터가 오간다는 점을 잊고있었다...   
+[해결] Rectangle을 사각형 버튼을 통해 생성되도록 DrawingViewDelegate를 생성하여 ViewContoller가 Model과 View의 Delegate를 갖게하여 데이터가 오갈 수 있도록 하였다.   
+<img src="https://user-images.githubusercontent.com/92699723/195762209-ce254947-56a9-47b1-91ee-9fb035896713.png" width=300 height=500>
+
 
 ### **💬  실행 화면**   
 
