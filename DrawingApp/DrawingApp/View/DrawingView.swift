@@ -8,11 +8,6 @@
 import UIKit
 import OSLog
 
-protocol DrawingViewDelegate: AnyObject{
-    func creatingRectangleRequested()
-    
-}
-
 class DrawingView: UIView {
     
     weak var delegate: DrawingViewDelegate?
@@ -43,7 +38,6 @@ class DrawingView: UIView {
         subtitleAttr.font = .systemFont(ofSize: 15.0, weight: .regular)
         config.attributedSubtitle = subtitleAttr
 
-//        let rectButton = UIButton(configuration: config, primaryAction: UIAction(handler: addAction))
         let rectButton = UIButton(configuration: config)
         rectButton.frame = CGRect(x: 583, y: 930, width: 150, height: 93)
         return rectButton

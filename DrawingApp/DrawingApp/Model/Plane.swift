@@ -7,10 +7,6 @@
 
 import Foundation
 
-protocol PlaneDelegate:AnyObject {
-    func addingRectangleComplted(product: Rectangle)
-}
-
 // Plane은 생성한 사각형의 객체를 포함(저장)하여 View에서 변경되는 내용을 업데이트하고 반영한다.
 struct Plane {
     
