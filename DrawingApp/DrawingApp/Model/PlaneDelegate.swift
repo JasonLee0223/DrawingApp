@@ -9,6 +9,6 @@ import Foundation
 
 protocol PlaneDelegate:AnyObject {
     func addingRectangleComplted(product: Rectangle)
-    func rectangleFoundFromPlane(product: Rectangle)
+    func rectangleFoundFromPlane(product: Rectangle?)
     func rectangleNotFoundFromPlane()
 }
