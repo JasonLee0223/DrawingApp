@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol ControlViewDelegate: AnyObject {
-    
-}
-
 class ControlView: UIView {
     
     init(frame: CGRect, backgroundColor: UIColor) {
@@ -23,6 +19,10 @@ class ControlView: UIView {
         super.init(coder: coder)
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - property
+    weak var delegate: ControlViewDelegate?
+    private(set) var selectedRectangleView: UIView?
     
     let colorLabel: UILabel = {
         let backgroundColor = UILabel()
@@ -71,9 +71,9 @@ class ControlView: UIView {
         slider.translatesAutoresizingMaskIntoConstraints = false
         return slider
     }()
-    
 }
 
+//MARK: - Layout
 extension ControlView {
     func layout() {
         self.addSubview(colorLabel)
@@ -92,5 +92,24 @@ extension ControlView {
         slider.topAnchor.constraint(equalTo: alphaLabel.bottomAnchor, constant: 10).isActive = true
         slider.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30).isActive = true
         slider.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30).isActive = true
+    }
+}
+
+//MARK: - Method
+extension ControlView {
+    func clearRectangleViewSelection() {
+        if let selectedRectangleView = self.selectedRectangleView {
+            selectedRectangleView.layer.borderWidth = 0
+            self.selectedRectangleView = nil
+        }
+    }
+    
+    func clearSelectedRectangleInfo() {
+        self.slider.value = 0
+        self.colorDescription.backgroundColor = .white
+        self.colorDescription.setTitle("", for: .normal)
+        if let delegate = self.delegate {
+            delegate.clearingSelectedRectangleInfoCompleted()
+        }
     }
 }
