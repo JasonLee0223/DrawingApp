@@ -21,6 +21,18 @@ class Rectangle: ShowRect {
         self.backgroundColor = backgroundColor
         self.alpha = alpha
     }
+    
+    func isPointRectangleExist(_ point: Point) -> Bool {
+        let minX = point.x
+        let minY = point.y
+        let maxX = point.x + self.size.width
+        let maxY = point.y + self.size.height
+        if((point.x <= maxX && point.x >= minX) && (point.y <= maxY && point.y >= minY)) {
+            return true
+        } else {
+            return false
+        }
+    }
 }
 
 extension ShowRect {
