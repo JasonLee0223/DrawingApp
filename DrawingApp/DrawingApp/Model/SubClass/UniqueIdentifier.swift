@@ -9,7 +9,6 @@ import Foundation
 
 //MARK: - uniqueID Format: xxx-xxx-xxx
 class UniqueIdentifier {
-    
     private(set) var uniqueID: String
     
     init() {
@@ -31,5 +30,15 @@ class UniqueIdentifier {
 extension UniqueIdentifier: CustomStringConvertible {
     var description: String {
         return "RectID (\(self.uniqueID))"
+    }
+}
+
+extension UniqueIdentifier: Equatable, Hashable {
+    static func == (lhs: UniqueIdentifier, rhs: UniqueIdentifier) -> Bool {
+        return lhs.uniqueID == rhs.uniqueID
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(uniqueID)
     }
 }
