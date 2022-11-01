@@ -11,19 +11,18 @@ import UIKit
 // ViewFactory의 역할은 똑같이 생성되는 뷰를 관리하는 역할?
 class ViewFactory {
     
-    static func generateRectangleView(of rectangle: Rectangle) -> UIView {
+    static func generateRectangleView(of rectangle: Rectangle) -> RectangleView {
         let point = rectangle.point
         let size = rectangle.size
+        let frame = CGRect(x: point.x, y: point.y,
+                           width: size.width, height: size.height)
         let backgroundColor = rectangle.backgroundColor
         let convertedColorValue = ViewFactory.convertColorValueToUIColor(r: Double(backgroundColor.red), g: Double(backgroundColor.green), b: Double(backgroundColor.blue))
         let alpha = CGFloat(rectangle.alpha.rawValue)
         
-        let newRectView = UIView(frame: CGRect(x: point.x,
-                                               y: point.y,
-                                               width: size.width,
-                                               height: size.height))
-        newRectView.alpha = alpha
-        newRectView.backgroundColor = convertedColorValue
+        let newRectView = RectangleView(frame: frame,
+                                        backgroundColor: convertedColorValue,
+                                        alpha: alpha)
         return newRectView
     }
 }
