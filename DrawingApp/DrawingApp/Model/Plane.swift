@@ -10,6 +10,8 @@ import Foundation
 // Plane은 생성한 사각형의 객체를 포함(저장)하여 View에서 변경되는 내용을 업데이트하고 반영한다.
 struct Plane {
     
+    weak var delegate: PlaneDelegate?
+    private var specifiedRectangle: Rectangle?
     private var rectangles = [Rectangle]()
     private(set) var selectedRectangleID = [String]()
     private var count: Int = 0
@@ -23,10 +25,13 @@ struct Plane {
         }
     }
     
-    weak var delegate: PlaneDelegate?
+    // Subscript를 이용하여 index를 넘겨 해당 사각형 모델을 return
+    subscript(_ index: Int) -> Rectangle? {
+        return rectangles[index]
+    }
     
     // 사각형을 갖게 되는 메서드
-    mutating func add(theCreated rectangle: Rectangle, id: String) {
+    mutating func add(theCreated rectangle: Rectangle) {
         rectangles.append(rectangle)
         count += 1
         if let delegate = self.delegate {
@@ -46,9 +51,17 @@ struct Plane {
 //        }
 //    }
     
-    // Subscript를 이용하여 index를 넘겨 해당 사각형 모델을 return
-    subscript(_ index: Int) -> Rectangle? {
-        return rectangles[index]
+    mutating func isThereRectangle(point: Point) {
+        for rectangle in rectangles.reversed() {
+            if rectangle.isPointRectangleExist(point) {
+                self.specifiedRectangle = rectangle
+                if delegate?.findRequestFromPlane(product: rectangle) == true {
+                    return
+                } else {
+                    self.specifiedRectangle = nil
+                }
+            }
+        }
     }
     
     // 터치 좌표를 넘기면 해당 위치의 사각형이 존재하는지 판단
