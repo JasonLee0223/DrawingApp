@@ -10,6 +10,8 @@
 		5B2F5A1728F9340E00528E03 /* PlaneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F5A1628F9340E00528E03 /* PlaneDelegate.swift */; };
 		5B2F5A1928F9343100528E03 /* DrawingViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F5A1828F9343100528E03 /* DrawingViewDelegate.swift */; };
 		5B64EB5828E41380004A7C49 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64EB5728E41380004A7C49 /* ViewFactory.swift */; };
+		5B7056F72910F11100041B12 /* ControlViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7056F62910F11100041B12 /* ControlViewDelegate.swift */; };
+		5B7056F929117EC900041B12 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7056F829117EC900041B12 /* RectangleView.swift */; };
 		5B8DB96628BC95D2007F98C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB96528BC95D2007F98C6 /* AppDelegate.swift */; };
 		5B8DB96828BC95D2007F98C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB96728BC95D2007F98C6 /* SceneDelegate.swift */; };
 		5B8DB96A28BC95D2007F98C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DB96928BC95D2007F98C6 /* ViewController.swift */; };
@@ -55,6 +57,8 @@
 		5B2F5A1628F9340E00528E03 /* PlaneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDelegate.swift; sourceTree = "<group>"; };
 		5B2F5A1828F9343100528E03 /* DrawingViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewDelegate.swift; sourceTree = "<group>"; };
 		5B64EB5728E41380004A7C49 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		5B7056F62910F11100041B12 /* ControlViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlViewDelegate.swift; sourceTree = "<group>"; };
+		5B7056F829117EC900041B12 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		5B8DB96228BC95D2007F98C6 /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8DB96528BC95D2007F98C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B8DB96728BC95D2007F98C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				5B8DB9AA28D05DFA007F98C6 /* ControlView.swift */,
 				5B8DB9AC28D2F48F007F98C6 /* DrawingView.swift */,
 				5B2F5A1828F9343100528E03 /* DrawingViewDelegate.swift */,
+				5B7056F62910F11100041B12 /* ControlViewDelegate.swift */,
+				5B7056F829117EC900041B12 /* RectangleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -377,6 +383,8 @@
 				5B8DB96A28BC95D2007F98C6 /* ViewController.swift in Sources */,
 				5BF1D70828ED773D0042849A /* RectagleFactory.swift in Sources */,
 				5B8DB9AB28D05DFA007F98C6 /* ControlView.swift in Sources */,
+				5B7056F72910F11100041B12 /* ControlViewDelegate.swift in Sources */,
+				5B7056F929117EC900041B12 /* RectangleView.swift in Sources */,
 				5B2F5A1928F9343100528E03 /* DrawingViewDelegate.swift in Sources */,
 				5B8DB9A028BCB118007F98C6 /* Alpha.swift in Sources */,
 				5B64EB5828E41380004A7C49 /* ViewFactory.swift in Sources */,
