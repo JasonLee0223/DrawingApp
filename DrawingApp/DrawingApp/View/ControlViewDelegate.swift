@@ -8,6 +8,6 @@
 import Foundation
 
 protocol ControlViewDelegate: AnyObject {
-    func clearingSelectedRectangleInfoCompleted()
+//    func clearingSelectedRectangleInfoCompleted()
     
 }

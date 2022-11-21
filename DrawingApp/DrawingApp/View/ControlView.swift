@@ -109,7 +109,7 @@ extension ControlView {
         self.colorDescription.backgroundColor = .white
         self.colorDescription.setTitle("", for: .normal)
         if let delegate = self.delegate {
-            delegate.clearingSelectedRectangleInfoCompleted()
+//            delegate.clearingSelectedRectangleInfoCompleted()
         }
     }
 }
